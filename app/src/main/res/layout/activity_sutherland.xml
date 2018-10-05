@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.tutorialgraphics.Sutherland"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:text="lower left corner"
+            android:textStyle="bold"
+            android:layout_weight="2"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/xmin"
+            android:inputType="numberDecimal|numberSigned"
+            android:hint="Xmin"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/ymin"
+            android:inputType="numberDecimal|numberSigned"
+
+            android:hint="Ymin"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:text="upper right corner"
+            android:textStyle="bold"
+            android:layout_weight="2"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/xmax"
+            android:inputType="numberDecimal|numberSigned"
+            android:hint="Xmax"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/ymax"
+            android:inputType="numberDecimal|numberSigned"
+            android:hint="Ymax"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:text="Coordinate"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/x"
+            android:inputType="numberDecimal|numberSigned"
+            android:hint="x"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/y"
+            android:inputType="numberDecimal|numberSigned"
+            android:hint="y"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/result1"
+            android:layout_weight="2"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result"
+        android:paddingTop="5dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Show"
+        android:id="@+id/show"
+        android:textColor="@android:color/white"
+
+        />
+
+
+
+
+
+
+</LinearLayout>
